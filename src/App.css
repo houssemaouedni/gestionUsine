@@ -1,0 +1,67 @@
+.top-11{
+    top: 11px;
+}
+
+@media screen and (max-width: 1109px) {
+    .noGrid{
+        display: block !important;
+    }
+    
+}
+
+
+.ml-260 {
+    
+    margin-left: 260px;
+}
+@media (min-width: 768px) {
+    .md\:ml-260 {
+        margin-left: 260px/* 260px */;
+    }
+}
+
+.sidebar {
+    width: 260px; /* Largeur du sidebar */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -260px; /* Déplacer le sidebar hors de la vue initialement */
+    background-color: white; /* Couleur de fond du sidebar */
+    transition: left 0.5s ease; /* Transition de 0.5 secondes avec un effet de ralentissement */
+    z-index: 50; /* Empiler au-dessus du contenu principal */
+    box-shadow: 5px 0 25px 0 rgba(94, 92, 154, 0.1); /* Ombre */
+  }
+  .sidebar.active {
+    left: 0; 
+  }
+
+.w-33rem{
+    width: 33rem !important;
+}
+.panel{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+
+}
+
+.dropdown-list{
+    width: 8rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 14px;
+    box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);   
+}
+.dropdown-list li{
+    margin: 0.5rem 0;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+.dropdown-list li:hover{
+    background-color: #4361ee;
+    text-transform: capitalize;
+    color: white;
+  
+}
